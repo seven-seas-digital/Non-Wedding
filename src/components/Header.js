@@ -1,8 +1,11 @@
 import React from 'react';
+import Logo from './Logo.js';
 
 const Header = (props) => {
   return (
-    <h2> Hello bi ch </h2> 
+    <div className="header">
+      <Logo />
+    </div>
   );
 
 }
