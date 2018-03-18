@@ -7,7 +7,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <h2>Non-Wedding</h2>
       </div>
     );
   }
