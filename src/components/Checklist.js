@@ -1,8 +1,12 @@
 import React from 'react';
+import ChecklistItem from './ChecklistItem';
 
 const Checklist = (props) => {
   return (
-    <h2> Checklist </h2>
+    <div className="check-list-item">
+      <h2> Checklist </h2>
+        <ChecklistItem />
+    </div>
   );
 }
 
