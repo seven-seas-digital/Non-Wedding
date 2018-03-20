@@ -5,7 +5,7 @@ const UserInfo = (props) => {
   return (
     <div className="profile-wrapper">
       <img src={profilePicSrc} alt="" className="image--cover" />
-      <h3>Valentina &amp; Rocco</h3>
+      <h3 style={{color: 'white'}}>Valentina &amp; Rocco</h3>
     </div>
 
   );

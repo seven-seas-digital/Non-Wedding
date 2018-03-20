@@ -28,7 +28,7 @@
 }
 
 .header {
-  background-color: rosybrown;
+  background: linear-gradient(to bottom right,rgb(235, 87, 143), rgb(235, 84, 91),rgb(235, 87, 90), rgb(238, 135, 64));
 }
 
 .image--cover {

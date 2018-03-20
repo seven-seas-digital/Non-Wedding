@@ -2,7 +2,7 @@ import React from 'react';
 
 const Nav = (props) => {
   return (
-    <h2>Nav Menu </h2>
+    <h2 style={{color: 'white'}}>Nav Menu </h2>
   );
 }
 
