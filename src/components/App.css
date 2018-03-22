@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #e4e1e0;
+  min-height: 800px;
 }
 
 .App-logo {
@@ -29,8 +31,19 @@
 
 .header {
   background: linear-gradient(to bottom right,rgb(235, 87, 143), rgb(235, 84, 91),rgb(235, 87, 90), rgb(238, 135, 64));
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
+.logo-container {
+  text-align: left;
+
+}
+
+.logo {
+  width: 20%;
+  padding-left: 6px;
+}
 .image--cover {
   width: 150px;
   height: 150px;
@@ -39,4 +52,10 @@
 
   object-fit: cover;
   object-position: center right;
+}
+
+.checklist-container {
+  border-radius: 8px;
+  background-color: white;
+  margin: 5px;
 }

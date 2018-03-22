@@ -1,8 +1,11 @@
 import React from 'react';
+import logo from '../assets/rings-nonwedding.svg';
 
 const Logo = (props) => {
   return (
-    <h2 style={{margin: 0, textAlign: 'left', color: 'white'}}> Logo </h2>
+    <div className="logo-container">
+      <img src={logo} alt="nonwedding-logo" className="logo"/>
+    </div>
   );
 }
 
