@@ -54,6 +54,23 @@
   object-position: center right;
 }
 
+.nav-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5% 20px;
+  margin-left: -1px;
+}
+.nav-container li:not(:first-child) {
+  border-left: 1px solid white;
+  padding-left: 10%;
+}
+.nav-container a {
+  color: white;
+  text-decoration: none;
+}
 .checklist-container {
   border-radius: 8px;
   background-color: white;

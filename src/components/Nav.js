@@ -2,7 +2,12 @@ import React from 'react';
 
 const Nav = (props) => {
   return (
-    <h2 style={{color: 'white'}}>Nav Menu </h2>
+    <ul className="nav-container">
+      <li><a href="">budget</a></li>
+      <li><a href="">apparel</a></li>
+      <li><a href="">reception</a></li>
+      <li><a href="">ceremony</a></li>      
+    </ul>
   );
 }
 
