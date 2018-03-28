@@ -64,8 +64,8 @@
   margin-left: -1px;
 }
 .nav-container li:not(:first-child) {
-  border-left: 1px solid white;
-  padding-left: 10%;
+  /* border-left: 1px solid white;
+  padding-left: 10%; */
 }
 .nav-container a {
   color: white;
