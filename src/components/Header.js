@@ -8,7 +8,7 @@ const Header = (props) => {
     <div className="header">
       <Logo />
       <UserInfo />
-      <Nav />
+      <Nav updateChecklist={props.updateChecklist}/>
     </div>
   );
 
