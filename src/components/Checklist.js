@@ -9,6 +9,8 @@ const Checklist = (props) => {
     <div className="checklist-container">
       <h2>{checklistType}</h2>
         <ChecklistItem />
+        <ChecklistItem />
+        <ChecklistItem />
     </div>
   );
 }
