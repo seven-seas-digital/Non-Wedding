@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/rings-nonwedding.svg';
+import logo from '../assets/logo-nonwedding.svg';
 
 const Logo = (props) => {
   return (
