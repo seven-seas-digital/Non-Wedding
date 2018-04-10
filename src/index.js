@@ -13,7 +13,10 @@ const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <Switch>
+        <Route exact path='/' component={App} />
+        <Route exact path='/signIn' component={SignIn} />
+      </Switch>
     </BrowserRouter>
   </Provider>
 , document.getElementById('root'));

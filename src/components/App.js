@@ -1,23 +1,34 @@
 import React, { Component } from 'react';
-import Home from './Home.js';
-import { Switch, Route } from 'react-router-dom';
-import SignIn from './SignIn';
-export default class App extends Component {
+import Header from './Header.js';
+import { connect } from 'react-redux';
+import './App.css';
+// import Checklist from './Checklist';
+
+class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      activeChecklist: 'budget'
+    };
+    this.updateChecklist = this.updateChecklist.bind(this);
   }
   
+  updateChecklist(type) {
+    this.setState({
+      activeChecklist: type
+    })
+  }
 
 
   render() {
-
+    // const activeChecklist = this.state.activeChecklist;
+    
     return (
-      <div className="DaApp">
-        <Switch>
-          <Route path='/signIn' component={SignIn}></Route>
-          <Route path='/' component={Home}></Route>
-      </Switch>
+      <div className="app">
+        <Header 
+          updateChecklist={this.updateChecklist}/>
+          {this.props.children}
       </div>
     );
   }
@@ -26,3 +37,5 @@ export default class App extends Component {
 function mapStateToProps(state) {
   return state;
 }
+
+export default connect(mapStateToProps)(App);
