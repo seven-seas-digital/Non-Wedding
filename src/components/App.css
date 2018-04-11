@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 .App {
   text-align: center;
   background-color: #e4e1e0;
@@ -74,8 +77,8 @@
 .checklist-container {
   border-radius: 8px;
   background-color: white;
-  margin: 5px;
-  padding: 10px;
+  /* margin: 5px;
+  padding: 10px; */
 }
 
 .checklist-item {
@@ -83,7 +86,7 @@
   border-radius: 9px;
   box-shadow: 0px 2px 9px 1px #ccc;
   padding: 20px;
-  margin: 15px 0;
+  margin: 10px;
 }
 
 .content-container {
@@ -119,4 +122,8 @@
   transform: translate(-50%, -50%) rotate(180deg);
   font-size: 10px;
   margin-top: 2px;
+}
+
+.slick-slider {
+  overflow: hidden;
 }
