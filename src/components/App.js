@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header.js';
 import { connect } from 'react-redux';
 import './App.css';
+import Checklist from './Checklist.js';
 // import Checklist from './Checklist';
 
 class App extends Component {
@@ -22,12 +23,14 @@ class App extends Component {
 
 
   render() {
-    // const activeChecklist = this.state.activeChecklist;
+    const activeChecklist = this.state.activeChecklist;
     
     return (
       <div className="app">
         <Header 
           updateChecklist={this.updateChecklist}/>
+          <Checklist 
+          checklistType={activeChecklist}/>
           {this.props.children}
       </div>
     );
