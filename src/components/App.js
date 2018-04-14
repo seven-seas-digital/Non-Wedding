@@ -28,7 +28,7 @@ class App extends Component {
     // const activeChecklist = this.state.activeChecklist;
     const activeChecklist = this.props.activeChecklist;
     return (
-      <div className="app">
+      <div className="App">
         <Header
           updateChecklist={this.props.actions.changeChecklist} />
           <Checklist

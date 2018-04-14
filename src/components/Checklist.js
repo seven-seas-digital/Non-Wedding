@@ -15,16 +15,6 @@ export default class Checklist extends Component {
     this.updateSlider = this.updateSlider.bind(this);
   }
 
-  // componentDidMount() {
-  //   this.updateSlider()
-  // }
-
-  // componentDidUpdate(prevProps, prevState, snapshot) {
-  //   const checklistType = prevProps.checklistType;
-  //   const slideId = checklistMap[checklistType];
-  //   this.slider.slickGoTo(slideId);
-  // }
-
   updateSlider(id) {
     this.slider.slickGoTo(id);
   }
@@ -39,16 +29,15 @@ export default class Checklist extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      initialSlide: 0
+      initialSlide: slideId
     };
 
     if (this.slider) {
-
       this.updateSlider(slideId);
     }
 
     return (
-      <div class="fuck">
+      <div className="checklists">
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div className="checklist-container">
             <h2>Budget</h2>
