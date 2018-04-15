@@ -20,6 +20,7 @@ class App extends Component {
           activeNav={activeNav}
           updateChecklist={this.props.actions.changeChecklist} />
           <Checklist
+            checklistMap={this.props.checklistMap}
             updateNav={this.props.actions.updateNav}
             checklistType={activeChecklist}/>
           {this.props.children}
@@ -35,7 +36,13 @@ function mapDispatchToProps(dispatch){
 }
 
 function mapStateToProps(state) {
-  return state;
+  const checklistMap = {
+    'budget': 0,
+    'apparel': 1,
+    'reception': 2,
+    'ceremony': 3
+  }
+  return {checklistMap, ...state }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

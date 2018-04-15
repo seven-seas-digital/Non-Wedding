@@ -8,7 +8,7 @@ const Nav = (props) => {
     props.updateChecklist(type);
   }
 
-  const activeChecklist = props.activeChecklist;
+  const activeChecklist = props.activeChecklist || 'budget';
   const activeNav = props.activeNav;
 
   let realAcitveNav = activeChecklist;
