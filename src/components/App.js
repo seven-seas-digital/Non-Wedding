@@ -10,26 +10,15 @@ import Checklist from './Checklist.js';
 class App extends Component {
   constructor(props) {
     super(props);
-
-    // this.state = {
-    //   activeChecklist: 'budget'
-    // };
-    // this.updateChecklist = this.updateChecklist.bind(this);
   }
 
-  // updateChecklist(type) {
-  //   this.setState({
-  //     activeChecklist: type
-  //   })
-  // }
-
-
   render() {
-    // const activeChecklist = this.state.activeChecklist;
     const activeChecklist = this.props.activeChecklist;
+
     return (
       <div className="App">
         <Header
+          activeChecklist={activeChecklist}
           updateChecklist={this.props.actions.changeChecklist} />
           <Checklist
           checklistType={activeChecklist}/>
