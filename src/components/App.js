@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 import * as Actions from '../actions/index.js';
 import './App.css';
 import Checklist from './Checklist.js';
-// import Checklist from './Checklist';
 
 class App extends Component {
   constructor(props) {
@@ -14,14 +13,15 @@ class App extends Component {
 
   render() {
     const activeChecklist = this.props.activeChecklist;
-
+    const activeNav = this.props.activeNav;
     return (
       <div className="App">
         <Header
-          activeChecklist={activeChecklist}
+          activeNav={activeNav}
           updateChecklist={this.props.actions.changeChecklist} />
           <Checklist
-          checklistType={activeChecklist}/>
+            updateNav={this.props.actions.updateNav}
+            checklistType={activeChecklist}/>
           {this.props.children}
       </div>
     );

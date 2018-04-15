@@ -13,10 +13,15 @@ export default class Checklist extends Component {
   constructor(props) {
     super(props);
     this.updateSlider = this.updateSlider.bind(this);
+    this.updateNav = this.updateNav.bind(this);
   }
 
   updateSlider(id) {
     this.slider.slickGoTo(id);
+  }
+
+  updateNav(type) {
+    this.props.updateNav(type)
   }
 
   render() {
@@ -29,7 +34,13 @@ export default class Checklist extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: false,
-      initialSlide: slideId
+      initialSlide: slideId,
+      onSwipe: (function(direction) {
+        // const currentList = this.props.checklistType;
+        debugger;
+        this.updateNav('apparel');
+
+      }).bind(this)
     };
 
     if (this.slider) {
