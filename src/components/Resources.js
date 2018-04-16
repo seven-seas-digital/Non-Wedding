@@ -6,7 +6,7 @@ import * as Actions from '../actions/index.js';
 import './App.css';
 import Checklist from './Checklist.js';
 
-class App extends Component {
+class Resources extends Component {
   constructor(props) {
     super(props);
   }
@@ -45,4 +45,4 @@ function mapStateToProps(state) {
   return {checklistMap, ...state }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Resources);
