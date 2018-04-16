@@ -141,3 +141,8 @@
 .checklists {
   margin: 10px 6px;
 }
+
+
+.freak {
+  mix-blend-mode: overlay !important;
+}
