@@ -13,16 +13,16 @@ class App extends Component {
 
   render() {
     const activeChecklist = this.props.activeChecklist;
-    const activeNav = this.props.activeNav;
+    // const activeNav = this.props.activeNav;
     return (
       <div className="App">
         <Header
-          activeNav={activeNav}
+          activeChecklist={activeChecklist}
           updateChecklist={this.props.actions.changeChecklist} />
         <Checklist
           checklistMap={this.props.checklistMap}
-          updateNav={this.props.actions.updateNav}
-          checklistType={activeChecklist}/>
+          updateChecklist={this.props.actions.changeChecklist}
+          checklistType={activeChecklist} />
         {this.props.children}
       </div>
     );

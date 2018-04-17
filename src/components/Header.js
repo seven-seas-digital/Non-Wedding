@@ -9,7 +9,6 @@ const Header = (props) => {
       <Logo />
       <UserInfo />
       <Nav
-        activeNav={props.activeNav}
         activeChecklist={props.activeChecklist}
         updateChecklist={props.updateChecklist}/>
     </div>

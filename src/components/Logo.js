@@ -19,8 +19,9 @@ class Logo extends Component {
   render() {
     return (
       <div className="logo-container">
-        {/* <img src={logo} alt="nonwedding-logo" className="logo"/> */}
-        < Hearts />
+        <div className="hearts-container">
+          < Hearts />
+        </div>
         <span style={{position: 'absolute', right: '20px', top: '0'}}>{ this.authButton() }</span>
       </div>
     );

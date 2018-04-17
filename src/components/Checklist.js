@@ -22,7 +22,7 @@ export default class Checklist extends Component {
   }
 
   updateNav(type) {
-    this.props.updateNav(type)
+    this.props.updateChecklist(type)
   }
 
   getKeyByValue(object, value) {
@@ -38,7 +38,7 @@ export default class Checklist extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      infinite: false,
+      // touchThreshold default 5
       dots: false,
       initialSlide: slideId,
       onSwipe: (function(direction) {

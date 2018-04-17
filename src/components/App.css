@@ -51,7 +51,7 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  margin: 20px 20px 0;
+  margin: 0px 20px 0;
 
   object-fit: cover;
   object-position: center right;
@@ -74,6 +74,14 @@
 .nav-container a {
   color: white;
   text-decoration: none;
+}
+
+.nav-item {
+  background-color: transparent;
+}
+
+.nav-item.active {
+  background-color: purple;
 }
 
 .nav-container svg {
@@ -142,6 +150,14 @@
   margin: 10px 6px;
 }
 
+.hearts-container svg {
+  /* width: 25%; */
+}
+
+.hearts-container {
+  padding: 1
+  0px;
+}
 
 .freak {
   mix-blend-mode: overlay !important;
