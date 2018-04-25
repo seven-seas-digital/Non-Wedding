@@ -63,7 +63,7 @@
   padding: 0;
   display: flex;
   justify-content: space-around;
-  padding: 0 5% 20px;
+  padding: 0 5%;
   margin-left: -1px;
   position: relative;
 }
@@ -81,7 +81,17 @@
 }
 
 .nav-item.active {
-  background-color: purple;
+  margin-bottom: -20px;
+}
+
+.svg-triangle{
+  fill: white;
+}
+
+.nav-item.active::after {
+  content: url('../assets/arrow.svg');
+  display: block;
+  transform: rotate(180);
 }
 
 .nav-container svg {
