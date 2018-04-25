@@ -7,18 +7,6 @@
   min-height: 800px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
 .App-title {
   font-size: 1.5em;
 }
@@ -36,6 +24,12 @@
   background: linear-gradient(to bottom right,rgb(254, 17, 126), rgb(255, 44, 105),rgb(255, 118, 46), rgb(255, 129, 38));
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.profile-wrapper h3 {
+  font-family: 'Libre Baskerville', serif;
+  line-height: 23pt;
+  font-size: 29px;  
 }
 
 .logo-container {
