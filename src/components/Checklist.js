@@ -34,29 +34,16 @@ export default class Checklist extends Component {
     const slideId = checklistMap[checklistType];
 
     var settings = {
-      dots: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      // touchThreshold default 5
       dots: false,
+      draggable: true,
       initialSlide: slideId,
-      onSwipe: (function(direction) {
-        const currentList = this.props.checklistType;
+      afterChange: (function(index) {
         const map = this.props.checklistMap;
-        const curIndex = map[currentList];
-        let nextChecklist;
-        if (direction === 'left') {
-          // move the arrow to the right
-          if ( curIndex === 3 ) { return };
-          // find the type of checklist form the map based on the curIndex + 1
-          nextChecklist = this.getKeyByValue(map, curIndex+1);
-        } else {
-          // move the arrow to the left
-          if ( curIndex === 0 ) { return }
-          nextChecklist = this.getKeyByValue(map, curIndex-1);
-        }
-        // figure out if we should
+        const nextChecklist = Object.keys(map).find(key => map[key] === index);
+     
         this.updateNav(nextChecklist);
       }).bind(this)
     };
