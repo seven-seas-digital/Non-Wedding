@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ChecklistItem from './ChecklistItem';
 import Slider from "react-slick";
 
+
 const checklistMap = {
   'budget': 0,
   'apparel': 1,

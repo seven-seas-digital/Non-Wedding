@@ -166,3 +166,12 @@
 .freak {
   mix-blend-mode: overlay !important;
 }
+
+.slide-menu-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.slide-menu {
+  height: 50% !important;
+}
