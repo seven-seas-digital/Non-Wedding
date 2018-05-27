@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ChecklistItem from './ChecklistItem';
 import Slider from "react-slick";
-
+import BudgetDetail from './BudgetDetail';
 
 const checklistMap = {
   'budget': 0,
@@ -58,9 +58,7 @@ export default class Checklist extends Component {
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div className="checklist-container">
             <h2>Budget</h2>
-            <ChecklistItem />
-            <ChecklistItem />
-            <ChecklistItem />
+            <BudgetDetail />
           </div>
 
           <div className="checklist-container">
