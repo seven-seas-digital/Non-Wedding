@@ -54,28 +54,28 @@ export default class Checklist extends Component {
     }
 
     return (
-      <div className="checklists">
+      <div className="dashboard">
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div className="checklist-container">
-            <h2>Budget</h2>
+            <h2 className="checklist-title">Budget</h2>
             <BudgetDetail />
           </div>
 
           <div className="checklist-container">
-            <h2>Apparel</h2>
+          <h2 className="checklist-title">Apparel</h2>
             <ChecklistItem />
             <ChecklistItem />
             <ChecklistItem />
           </div>
 
           <div className="checklist-container">
-            <h2>Reception</h2>
+          <h2 className="checklist-title">Reception</h2>
             <ChecklistItem />
             <ChecklistItem />
             <ChecklistItem />
           </div>
           <div className="checklist-container">
-            <h2>Ceremony</h2>
+          <h2 className="checklist-title">Ceremony</h2>
             <ChecklistItem />
             <ChecklistItem />
             <ChecklistItem />

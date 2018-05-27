@@ -26,6 +26,12 @@
   border-bottom-right-radius: 25px;
 }
 
+.budget-detail-container {
+  background: linear-gradient(to bottom right,rgb(255, 129, 38), rgb(255, 118, 46),rgb(255, 44, 105), rgb(254, 17, 126));
+  margin: 0px 11px;
+  border-radius: 3%;
+  padding-top: 25px
+}
 .profile-wrapper h3 {
   font-family: 'Libre Baskerville', serif;
   line-height: 23pt;
@@ -151,7 +157,7 @@
   overflow: hidden;
 }
 
-.checklists {
+.dashboard {
   margin: 10px 6px;
 }
 
@@ -175,4 +181,14 @@
 
 .slide-menu {
   height: 50% !important;
+}
+
+.checklist-title {
+  font-family: 'Futura';
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: rgb(254, 17, 126);
+  text-align: left;
+  margin-left: 23px;
 }
